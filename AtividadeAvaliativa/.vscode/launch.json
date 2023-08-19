@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Jhomany Carson/Documents/Meus Arquivos/Univel/GitHub/Projetos-C/ListasExercicio-c/ListaCP5",
-      "program": "c:/Users/Jhomany Carson/Documents/Meus Arquivos/Univel/GitHub/Projetos-C/ListasExercicio-c/ListaCP5/build/Debug/outDebug",
+      "cwd": "c:/Users/Jhomany Carson/Documents/Meus Arquivos/Univel/GitHub/Projetos-C/AtividadeAvaliativa",
+      "program": "c:/Users/Jhomany Carson/Documents/Meus Arquivos/Univel/GitHub/Projetos-C/AtividadeAvaliativa/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
