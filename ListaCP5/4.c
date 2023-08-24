@@ -1,32 +1,32 @@
-/*4) Faça um programa que determine e mostre os cinco primeiros múltiplos
-de 3 considerando números maiores que 0.
-*/
+/*4) Faça um programa que possua um array de nome A que armazene seis números inteiros. O programa
+deve executar os seguintes passos:
+
+a) Atribua os seguintes valores a esse array: 1, 0, 5, –2, –5, 7.
+b) Armazene em uma variável a soma dos valores das posições A[0], A[1] e A[5] do array e mostre
+na tela essa soma.
+c) Modifique o array na posição 4, atribuindo a essa posição o valor
+100.
+d) Mostre na tela cada valor do array A, um em cada linha.*/
 
 #include <stdio.h>
 
-int main() {
+int main(){
+    
+    //letra a
+    int A[6] = {1, 0, 5, -2, -5, 7};
+    
+    //letra b
+    int soma = A[0] + A[1] + A[5];
 
-    int var, multiplos, qtd = 0;
+    printf("\n Segue o resultado da soma: %d\n", soma);
 
-    printf("\nDigite um numero inteiro: ");
-    scanf(" %d", &var);
+    //letra c
+    A[3] = 100;
 
-    printf("\nOs multiplos de 3 do 0 ate %d, eh: ", var);
+    //letra d
+    for(int i = 0; i < 6; i++) {
 
-    for (int i = 0; i <= var; i++) {
-
-        if (i % 3 == 0 && i != 0) {
-
-            qtd +=1; 
-            printf("\n- %d", i);
-
-        }
-    }
-
-    if(qtd < 5) {
-
-        printf("\nExistem apenas %d numeros multiplos de 3 de 0 ate %d", qtd, var);    
-
+        printf("\nO valor %d eh: %d", i+1, A[i]);
     }
 
     return 0;

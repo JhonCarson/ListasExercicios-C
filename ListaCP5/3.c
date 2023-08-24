@@ -1,28 +1,23 @@
-/*3) Faça um programa que leia um número inteiro N e depois imprima os N
-primeiros números naturais ímpares.*/
-
+/*3) Faça um programa que leia cinco valores e os armazene em um vetor. Em seguida, mostre todos os
+valores lidos juntamente com a média dos valores.*/
 
 #include <stdio.h>
-#include <stdlib.h>
 
-int main() {
+int main(){
 
-    int n, impar;
+    float soma = 0, valor[5], media = 0;
 
-    printf("Digite um numero inteiro: ");
-    scanf(" %d", &n);
+    for (int i = 0; i < 5; i++){
 
+        printf("Digite o valor %d: ", i+1);
+        scanf(" %f", &valor[i]);
 
-    for (int i = 0; i <= n; i++) {
-
-        impar = i;
-
-        if( impar % 2 == 1) {
-            
-            printf("\n- %d", impar);
-
-        }
+        soma += valor[i];
     }
+
+    media = soma / 5;
+
+    printf("A media dos valores informados eh: %.1f", media);
 
     return 0;
 }

@@ -1,32 +1,50 @@
-/*5) Faça um programa que calcule e mostre a soma dos 50 primeiros números
-pares.
-*/
+/*5) Faça um programa que leia um vetor de oito posições. Em seguida, leia também dois valores X e Y
+quaisquer correspondentes a duas posições no vetor. Seu programa deverá exibir a soma dos valores
+encontrados nas respectivas posições X e Y*/
 
 #include <stdio.h>
 
-int main() {
+int main(){
 
-    int n, par, res = 0, qtd = 0;
+    int vet[8], soma, x, y, bool = 0;
 
-    printf("\nInforme um numero: ");
-    scanf(" %d", &n);
+    for(int i = 0; i < 8; i++){
 
-    for (int i = 0; i <= n; i++) {
+        printf("\nInforme o valor da posicao %d do vetor: ", i+1);
+        scanf(" %d", &vet[i]);
+    }
 
-        if (i % 2 == 0 && i != 0) {
+    while (!bool) {
 
-            qtd++;
-            par = i;
-            res += par;
-            printf("\n- %d", i);
+        printf("\nInforme a posicao que deseja para X: ");
+        scanf(" %d", &x);
+
+        if(x == 0){
+
+            printf("Valor invalido");
+        } else {
+
+            bool = 1;
+        }
+
+        printf("\nAgora faça o mesmo para y: ");
+        scanf(" %d", &y);
+
+        if(y == 0){
+
+            printf("Valor invalido");
+        } else {
+
+            bool = 1;
         }
     }
 
-    if (qtd < 50) { 
-        
-        printf("\nHaviam apenas %d numeros pares de 0 a %d", qtd, n);
-    }
+    x -= 1;
+    y -= 1;
+    soma = vet[x] + vet[y];
 
-    printf("\n\nA soma dos valores pares que existiam entre 0 e %d eh: %d", n, res);
+    printf("\nA soma dos valores encontrados nas posicoes %d e %d eh: %d", x + 1, y + 1, soma);
+    printf("\n ");
+
     return 0;
 }

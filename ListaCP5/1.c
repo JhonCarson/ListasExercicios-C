@@ -1,16 +1,23 @@
+/*1) Crie um programa que leia do teclado seis valores 
+inteiros e em seguida mostre na tela os valores lidos.*/
+
 #include <stdio.h>
 
-int main() {
+int main(){
 
-int n;
+    int valor[6];
 
-    printf("\nDigite um numero inteiro: ");
-    scanf(" %d", &n);
+    for (int i = 0; i < 6; i++) {
 
-    for (int i = 0; i <= n; i++) {
+        printf("\nDigite o valor %d: ", i+1);
+        scanf(" %d", &valor[i]);
+    }
 
-        printf("\n- %d", i);
+    printf("\nCerto, os valores lidos foram: \n\n");
 
+    for (int i = 0; i < 6; i++) {
+
+        printf("\nO valor %d eh: %d", i+1, valor[i]);
     }
 
     return 0;
