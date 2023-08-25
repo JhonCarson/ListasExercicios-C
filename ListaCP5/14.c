@@ -23,14 +23,16 @@ int main() {
     }
  //calculo a media   
     m = m / n;
+    printf("%.2f", m);
 
 //calculo minha somatoria e depois subtraio pela media
     for (int i = 0; i < n; i++) {
         
-        res += V[i];
+        somatoria = somatoria + (V[i] - m);
+        printf("\n%.2f", somatoria);
     }
 
-    somatoria = res - m;
+   // somatoria = res - m;
 
 //faço a multiplicação de fração que está dentro da minha raiz
     nominador = nominador * somatoria;
