@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Jhomany Carson/Documents/Meus Arquivos/Univel/GitHub/Projetos-C/ListasExercicio-c/ListaCP6",
-      "program": "c:/Users/Jhomany Carson/Documents/Meus Arquivos/Univel/GitHub/Projetos-C/ListasExercicio-c/ListaCP6/build/Debug/outDebug",
+      "cwd": "c:/Users/jhoma/OneDrive/Documentos/Univel/Algoritmos/Projeto-C/ListasExercicios-C/ListaCP6",
+      "program": "c:/Users/jhoma/OneDrive/Documentos/Univel/Algoritmos/Projeto-C/ListasExercicios-C/ListaCP6/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
