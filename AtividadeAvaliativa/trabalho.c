@@ -33,8 +33,8 @@ void listarAlunos(struct Aluno aluno) {
     printf("\nNome do Aluno: %s", aluno.nome);
     printf("\nRA do Aluno: %d", aluno.ra);
     printf("\nData de Nascimento do Aluno: %s", aluno.dataNascimento);
-    printf("\nEndereco 1 do Aluno: %s", aluno.endereco);
-    printf("\nEndereco 2 do Aluno: %s", aluno.endereco);
+    printf("\nEndereco 1 do Aluno: Rua %s, %d, %s, %s - %s", aluno.endereco[0].rua, aluno.endereco[0].num, aluno.endereco[0].bairro, aluno.endereco[0].cidade, aluno.endereco[0].estado);
+    printf("\nEndereco 2 do Aluno: Rua %s, %d, %s, %s - %s", aluno.endereco[1].rua, aluno.endereco[1].num, aluno.endereco[1].bairro, aluno.endereco[1].cidade, aluno.endereco[1].estado);
 
     for (int i = 0; i < 5; i++) {
     
@@ -46,6 +46,8 @@ void listarAlunos(struct Aluno aluno) {
 int encontrarAluno(struct Aluno alunos[], int ra, int tamanho) {
     for (int i = 0; i < tamanho; i++) {
         if (alunos[i].ra == ra) {
+
+            listarAlunos(alunos[i]);
             return i; // Retorna o índice do aluno encontrado
         }
     }
@@ -131,17 +133,33 @@ int main() {
                         // Adiciona o novo aluno ao vetor de alunos
                         alunos[numAlunos] = novoAluno;
                         numAlunos++;
+
                         printf("\nAluno adicionado com sucesso!\n");
-                    } else {
+                    } 
+                    else {
+                        
                         printf("\nO RA ja esta armazenado. Nao foi possivel adicionar o aluno.\n");
                     }
                 } else {
+                    
                     printf("\nNao ha espaco para adicionar mais alunos.\n");
                 }
                 break;
 
             case 2:
-                // Implemente a operacao de apagar informacoes de um aluno aqui
+            //2. Apagar informacoes de um aluno
+                int ra;
+
+                printf("Digite o RA do aluno que deseja apagar as informacoes: ");
+                scanf(" %d", ra);
+                
+                if ((alunos, ra, numAlunos) != -1) {
+                    
+                    printf("Segue as informacoes do aluno correspondente a esse RA: \n");
+                    encontrarAluno(alunos, ra, numAlunos);
+                }
+                    
+
                 break;
 
             case 3:
