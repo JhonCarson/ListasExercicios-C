@@ -12,7 +12,7 @@ int main () {
     char str[20], str2[20];
     int bool = 0, qtd1 = 0, qtd2 = 0, i = 0, j = 0;
 
-    printf("\Digite a palavra 1: ");
+    printf("\nDigite a palavra 1: ");
     setbuf(stdin, NULL);
     fgets(str, sizeof(str), stdin);
 
