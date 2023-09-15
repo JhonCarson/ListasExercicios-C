@@ -1,15 +1,7 @@
 /*3) Crie uma estrutura para representar as coordenadas de um ponto no plano (posições X e Y). Em seguida,
 declare e leia do teclado dois pontos e exiba a distância entre eles.*/
 
-<<<<<<< HEAD
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-
-
-int main(){
-=======
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -40,7 +32,6 @@ int main() {
     distancia = sqrt((pow(ponto1.x - ponto2.x, 2)) + (pow(ponto1.y - ponto2.y, 2)));
 
     printf("\nA distancia entre os dois pontos eh: %.2f", distancia);
->>>>>>> 08d51057e23b58c5f296d0a512a3a1d509e15351
 
     return 0;
 }
