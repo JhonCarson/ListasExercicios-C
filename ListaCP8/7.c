@@ -13,9 +13,6 @@ struct hora {
     int seg;
 };
 
-
-
-
 int main () {
 
     struct hora horario[5];
